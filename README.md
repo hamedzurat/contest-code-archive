@@ -16,6 +16,8 @@ Platforms for practicing problem solving and competitive coding.
     - https://www.codechef.com/users/zurat
 - codeforces
     - https://codeforces.com/profile/Zurat.8112
+- exercism
+    - https://exercism.org/profiles/hamed-zurat
 - hackerrank
     - https://www.hackerrank.com/profile/zurat
 - leetcode
