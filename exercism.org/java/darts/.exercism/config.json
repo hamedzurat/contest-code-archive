@@ -1,0 +1,32 @@
+{
+  "authors": [
+    "lemoncurry"
+  ],
+  "contributors": [
+    "ccouzens",
+    "FridaTveit",
+    "jmrunkle",
+    "msomji",
+    "muzimuzhi",
+    "SleeplessByte",
+    "Smarticles101",
+    "sshine",
+    "jennylia"
+  ],
+  "files": {
+    "solution": [
+      "src/main/java/Darts.java"
+    ],
+    "test": [
+      "src/test/java/DartsTest.java"
+    ],
+    "example": [
+      ".meta/src/reference/java/Darts.java"
+    ],
+    "invalidator": [
+      "build.gradle"
+    ]
+  },
+  "blurb": "Calculate the points scored in a single toss of a Darts game.",
+  "source": "Inspired by an exercise created by a professor Della Paolera in Argentina"
+}
