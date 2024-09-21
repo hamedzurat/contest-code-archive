@@ -1,0 +1,10 @@
+.idea/
+#
+exercism.org/c/*/*.out
+#
+exercism.org/elixir/*/_build/
+#
+exercism.org/java/*/.gradle/
+exercism.org/java/*/build/
+exercism.org/java/*/.idea/
+#

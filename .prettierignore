@@ -1,0 +1,17 @@
+exercism.org/*/*/HELP.md
+exercism.org/*/*/HINTS.md
+exercism.org/*/*/README.md
+exercism.org/*/*/.exercism/config.json
+exercism.org/*/*/.exercism/metadata.json
+#
+#
+.idea/
+#
+exercism.org/c/*/*.out
+#
+exercism.org/elixir/*/_build/
+#
+exercism.org/java/*/.gradle/
+exercism.org/java/*/build/
+exercism.org/java/*/.idea/
+#

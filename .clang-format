@@ -207,7 +207,7 @@ ColumnLimit: 0
 
 # CommentPragmas (std::string)
 # A regular expression that describes comments with special meaning, which should not be split into lines or otherwise changed.
-CommentPragmas: ''
+CommentPragmas: ""
 
 # ConstructorInitializerAllOnOneLineOrOnePerLine (bool)
 # If the constructor initializers don’t fit on a line, put each initializer on its own line.
