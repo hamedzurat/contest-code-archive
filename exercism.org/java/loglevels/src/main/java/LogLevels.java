@@ -1,5 +1,4 @@
 public class LogLevels {
-
     public static String message(String logLine) {
         String[] words = logLine.split("]: ", 100);
         return words[1].trim();
@@ -14,14 +13,14 @@ public class LogLevels {
             default -> "";
         };
 
-//        if (logLine.contains("INFO"))
-//            return "info";
-//        else if (logLine.contains("WARNING"))
-//            return "warning";
-//        else if (logLine.contains("ERROR"))
-//            return "error";
-//        else
-//            return "";
+        //        if (logLine.contains("INFO"))
+        //            return "info";
+        //        else if (logLine.contains("WARNING"))
+        //            return "warning";
+        //        else if (logLine.contains("ERROR"))
+        //            return "error";
+        //        else
+        //            return "";
     }
 
     public static String reformat(String logLine) {

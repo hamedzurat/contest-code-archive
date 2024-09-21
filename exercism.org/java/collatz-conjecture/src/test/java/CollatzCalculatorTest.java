@@ -3,8 +3,8 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
-public class CollatzCalculatorTest {
 
+public class CollatzCalculatorTest {
     private CollatzCalculator collatzCalculator = new CollatzCalculator();
 
     @Test
@@ -45,5 +45,4 @@ public class CollatzCalculatorTest {
                 .isThrownBy(() -> collatzCalculator.computeStepCount(-15))
                 .withMessage("Only positive integers are allowed");
     }
-
 }

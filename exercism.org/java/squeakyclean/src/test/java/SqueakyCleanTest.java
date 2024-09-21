@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SqueakyCleanTest {
 
+public class SqueakyCleanTest {
     @Test
     @Tag("task:1")
     @DisplayName("The clean method returns empty string when invoked on empty string")

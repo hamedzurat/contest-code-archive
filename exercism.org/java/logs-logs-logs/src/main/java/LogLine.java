@@ -1,6 +1,6 @@
 public class LogLine {
     private final LogLevel l;
-    private final String message;
+    private final String   message;
 
     public LogLine(String logLine) {
         l = switch (logLine.substring(1, 4)) {

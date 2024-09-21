@@ -3,7 +3,7 @@ class NeedForSpeed {
     private int x = 0, battery = 100;
 
     NeedForSpeed(int speed, int batteryDrain) {
-        this.speed = speed;
+        this.speed        = speed;
         this.batteryDrain = batteryDrain;
     }
 
@@ -38,6 +38,7 @@ class NeedForSpeed {
         return batteryDrain;
     }
 }
+
 
 class RaceTrack {
     int distance;

@@ -1,8 +1,8 @@
 import java.util.Collections;
 import java.util.List;
 
-public class TestTrack {
 
+public class TestTrack {
     public static void race(RemoteControlCar car) {
         car.drive();
     }

@@ -5,18 +5,17 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static org.assertj.core.api.Assertions.*;
 
+
 public class BirdWatcherTest {
-
-    private static final int DAY1 = 0;
-    private static final int DAY2 = 2;
-    private static final int DAY3 = 5;
-    private static final int DAY4 = 3;
-    private static final int DAY5 = 7;
-    private static final int DAY6 = 8;
-    private static final int TODAY = 4;
-
-    private BirdWatcher birdWatcher;
-    private int lastWeek[] = {DAY1, DAY2, DAY3, DAY4, DAY5, DAY6, TODAY};
+    private static final int         DAY1       = 0;
+    private static final int         DAY2       = 2;
+    private static final int         DAY3       = 5;
+    private static final int         DAY4       = 3;
+    private static final int         DAY5       = 7;
+    private static final int         DAY6       = 8;
+    private static final int         TODAY      = 4;
+    private              BirdWatcher birdWatcher;
+    private              int         lastWeek[] = {DAY1, DAY2, DAY3, DAY4, DAY5, DAY6, TODAY};
 
     @BeforeEach
     public void setUp() {
@@ -28,7 +27,7 @@ public class BirdWatcherTest {
     @DisplayName("The getLastWeek method correctly returns last week's counts")
     public void itTestGetLastWeek() {
         assertThat(birdWatcher.getLastWeek())
-            .containsExactly(DAY1, DAY2, DAY3, DAY4, DAY5, DAY6, TODAY);
+                .containsExactly(DAY1, DAY2, DAY3, DAY4, DAY5, DAY6, TODAY);
     }
 
     @Test
@@ -61,7 +60,6 @@ public class BirdWatcherTest {
         assertThat(birdWatcher.hasDayWithoutBirds()).isFalse();
     }
 
-
     @Test
     @Tag("task:5")
     @DisplayName("The getCountForFirstDays method returns correct visits' count for given number of days")
@@ -74,7 +72,7 @@ public class BirdWatcherTest {
     @DisplayName("The getCountForFirstDays method returns overall count when number of days is higher than array size")
     public void itTestGetCountForMoreDaysThanTheArraySize() {
         assertThat(birdWatcher.getCountForFirstDays(10))
-            .isEqualTo(DAY1 + DAY2 + DAY3 + DAY4 + DAY5 + DAY6 + TODAY);
+                .isEqualTo(DAY1 + DAY2 + DAY3 + DAY4 + DAY5 + DAY6 + TODAY);
     }
 
     @Test

@@ -7,8 +7,8 @@ import java.util.Random;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class CaptainsLogTest {
 
+public class CaptainsLogTest {
     private Random random1;
     private Random random2;
     private Random random3;
@@ -58,7 +58,7 @@ public class CaptainsLogTest {
 
         for (int i = 0; i < 100; i++) {
             var shipRegistryNumber = captainsLog.randomShipRegistryNumber();
-            var number = Integer.parseInt(shipRegistryNumber.substring(4));
+            var number             = Integer.parseInt(shipRegistryNumber.substring(4));
 
             assertThat(number).isBetween(1000, 9999);
         }

@@ -1,3 +1,4 @@
-public enum TravelMethod {
+public
+enum TravelMethod {
     WALKING, HORSEBACK
 }

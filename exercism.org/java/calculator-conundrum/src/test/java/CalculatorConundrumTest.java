@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;
 
-public class CalculatorConundrumTest {
 
+public class CalculatorConundrumTest {
     @Test
     @Tag("task:1")
     @DisplayName("The calculate method returns the correct result when adding small operands")
@@ -53,7 +53,7 @@ public class CalculatorConundrumTest {
     @DisplayName("The calculate method throws IllegalOperationException when passing invalid operation")
     public void throwExceptionForUnknownOperation() {
         String invalidOperation = "**";
-        String expectedMessage = "Operation '" + invalidOperation + "' does not exist";
+        String expectedMessage  = "Operation '" + invalidOperation + "' does not exist";
         assertThatExceptionOfType(IllegalOperationException.class)
                 .isThrownBy(() -> new CalculatorConundrum().calculate(3, 78, invalidOperation))
                 .withMessage(expectedMessage);

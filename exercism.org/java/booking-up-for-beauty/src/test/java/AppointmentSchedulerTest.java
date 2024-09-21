@@ -8,8 +8,8 @@ import java.time.Month;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class AppointmentSchedulerTest {
 
+public class AppointmentSchedulerTest {
     private final AppointmentScheduler scheduler = new AppointmentScheduler();
 
     @Test
@@ -17,7 +17,7 @@ public class AppointmentSchedulerTest {
     @DisplayName("Scheduling a date")
     public void testSchedule() {
         var description = "07/25/2019 13:45:00";
-        var expected = LocalDateTime.of(2019, 7, 25, 13, 45, 0);
+        var expected    = LocalDateTime.of(2019, 7, 25, 13, 45, 0);
 
         assertThat(scheduler.schedule(description)).isEqualTo(expected);
     }
@@ -189,7 +189,7 @@ public class AppointmentSchedulerTest {
     @DisplayName("Description on Friday afternoon")
     public void testDescriptionOnFridayAfternoon() {
         var appointment = LocalDateTime.of(2019, 3, 29, 15, 0, 0);
-        var expected = "You have an appointment on Friday, March 29, 2019, at 3:00 PM.";
+        var expected    = "You have an appointment on Friday, March 29, 2019, at 3:00 PM.";
 
         assertThat(scheduler.getDescription(appointment)).isEqualTo(expected);
     }
@@ -199,7 +199,7 @@ public class AppointmentSchedulerTest {
     @DisplayName("Description on Thursday afternoon")
     public void testDescriptionOnThursdayAfternoon() {
         var appointment = LocalDateTime.of(2019, 7, 25, 13, 45, 0);
-        var expected = "You have an appointment on Thursday, July 25, 2019, at 1:45 PM.";
+        var expected    = "You have an appointment on Thursday, July 25, 2019, at 1:45 PM.";
 
         assertThat(scheduler.getDescription(appointment)).isEqualTo(expected);
     }
@@ -209,7 +209,7 @@ public class AppointmentSchedulerTest {
     @DisplayName("Description on Wednesday morning")
     public void testDescriptionOnWednesdayMorning() {
         var appointment = LocalDateTime.of(2020, 9, 9, 9, 9, 9);
-        var expected = "You have an appointment on Wednesday, September 9, 2020, at 9:09 AM.";
+        var expected    = "You have an appointment on Wednesday, September 9, 2020, at 9:09 AM.";
 
         assertThat(scheduler.getDescription(appointment)).isEqualTo(expected);
     }

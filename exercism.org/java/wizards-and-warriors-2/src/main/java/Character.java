@@ -1,7 +1,7 @@
 public class Character {
     private String characterClass;
-    private int level;
-    private int hitPoints;
+    private int    level;
+    private int    hitPoints;
 
     public String getCharacterClass() {
         return characterClass;

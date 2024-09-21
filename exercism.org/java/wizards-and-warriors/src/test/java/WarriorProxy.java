@@ -1,10 +1,10 @@
-class WarriorProxy extends ReflectionProxy {
-
+class WarriorProxy
+        extends ReflectionProxy {
     @Override
     public String getTargetClassName() {
         return "Warrior";
     }
-    
+
     public String toString() {
         return invokeMethod("toString", new Class[0]);
     }

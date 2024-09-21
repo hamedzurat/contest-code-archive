@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;
 
+
 public class LogLevelsTest {
     @Test
     @Tag("task:1")
@@ -59,7 +60,7 @@ public class LogLevelsTest {
     @DisplayName("The reformat method correctly reformats an error log line")
     public void error_reformat() {
         assertThat(LogLevels.reformat("[ERROR]: Segmentation fault"))
-            .isEqualTo("Segmentation fault (error)");
+                .isEqualTo("Segmentation fault (error)");
     }
 
     @Test
@@ -67,7 +68,7 @@ public class LogLevelsTest {
     @DisplayName("The reformat method correctly reformats a warning log line")
     public void warning_reformat() {
         assertThat(LogLevels.reformat("[WARNING]: Decreased performance"))
-            .isEqualTo("Decreased performance (warning)");        
+                .isEqualTo("Decreased performance (warning)");
     }
 
     @Test
@@ -75,7 +76,7 @@ public class LogLevelsTest {
     @DisplayName("The reformat method correctly reformats an info log line")
     public void info_reformat() {
         assertThat(LogLevels.reformat("[INFO]: Disk defragmented"))
-            .isEqualTo("Disk defragmented (info)");        
+                .isEqualTo("Disk defragmented (info)");
     }
 
     @Test
@@ -83,6 +84,6 @@ public class LogLevelsTest {
     @DisplayName("The reformat method correctly reformats an error log line removing spaces")
     public void reformat_with_leading_and_trailing_white_space() {
         assertThat(LogLevels.reformat("[ERROR]: \t Corrupt disk\t \t \r\n"))
-            .isEqualTo("Corrupt disk (error)");        
+                .isEqualTo("Corrupt disk (error)");
     }
 }

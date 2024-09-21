@@ -5,14 +5,15 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;
 
+
 class FighterTest {
     private WarriorProxy warrior;
-    private WizardProxy wizard;
+    private WizardProxy  wizard;
 
     @BeforeEach
     void setup() {
         warrior = new WarriorProxy();
-        wizard = new WizardProxy();
+        wizard  = new WizardProxy();
     }
 
     @Test
@@ -29,7 +30,8 @@ class FighterTest {
     @Test
     @Tag("task:1")
     @DisplayName("The Warrior class inherits from the Fighter class")
-    void testWarriorIsInstanceOfFighter() throws ClassNotFoundException {
+    void testWarriorIsInstanceOfFighter()
+            throws ClassNotFoundException {
         assertThat(Class.forName("Warrior")).isAssignableTo(Fighter.class);
     }
 
@@ -114,7 +116,8 @@ class FighterTest {
     @Test
     @Tag("task:5")
     @DisplayName("The Wizard class inherits from the Fighter class")
-    void testWizardIsInstanceOfFighter() throws ClassNotFoundException {
+    void testWizardIsInstanceOfFighter()
+            throws ClassNotFoundException {
         assertThat(Class.forName("Wizard")).isAssignableTo(Fighter.class);
     }
 
@@ -211,14 +214,17 @@ class FighterTest {
         assertThat(wizard.getDamagePoints(new Fighter())).isEqualTo(12);
     }
 
-    private static class VulnerableFighter extends Fighter {
+    private static class VulnerableFighter
+            extends Fighter {
         @Override
         boolean isVulnerable() {
             return true;
         }
     }
 
-    private static class InvulnerableFighter extends Fighter {
+
+    private static class InvulnerableFighter
+            extends Fighter {
         @Override
         boolean isVulnerable() {
             return false;

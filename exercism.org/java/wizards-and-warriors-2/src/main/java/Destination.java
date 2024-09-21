@@ -1,6 +1,7 @@
-public class Destination {
+public
+class Destination {
     private String name;
-    private int inhabitants;
+    private int    inhabitants;
 
     public String getName() {
         return name;

@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;
 
-public class SalaryCalculatorTest {
 
+public class SalaryCalculatorTest {
     public SalaryCalculator calculator;
 
     @BeforeEach
@@ -90,5 +90,4 @@ public class SalaryCalculatorTest {
     public void salaryRespectMaximum() {
         assertThat(calculator.finalSalary(0, 77)).isEqualTo(2000.0);
     }
-
 }

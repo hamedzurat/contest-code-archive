@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+
 public class ElonsToyCarTest {
     @Test
     @Tag("task:1")
@@ -66,7 +67,7 @@ public class ElonsToyCarTest {
     public void battery_display_after_driving_once() {
         ElonsToyCar car = new ElonsToyCar();
         car.drive();
-        
+
         assertThat(car.batteryDisplay()).isEqualTo("Battery at 99%");
     }
 

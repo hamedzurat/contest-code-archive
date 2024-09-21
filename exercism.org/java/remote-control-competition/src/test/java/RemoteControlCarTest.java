@@ -7,7 +7,14 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+
 public class RemoteControlCarTest {
+    private static ProductionRemoteControlCar getCarWithVictories(int numberOfVictories) {
+        ProductionRemoteControlCar prc1 = new ProductionRemoteControlCar();
+        prc1.setNumberOfVictories(numberOfVictories);
+        return prc1;
+    }
+
     @Test
     @Tag("task:1")
     @DisplayName("The ProductionRemoteControlCar is an instance of the RemoteControlCar interface")
@@ -48,12 +55,12 @@ public class RemoteControlCarTest {
     @Tag("task:3")
     @DisplayName("The TestTrack.race method uses the drive method on the remote control car")
     public void race() {
-        ProductionRemoteControlCar productionCar = new ProductionRemoteControlCar();
+        ProductionRemoteControlCar   productionCar   = new ProductionRemoteControlCar();
         ExperimentalRemoteControlCar experimentalCar = new ExperimentalRemoteControlCar();
-        TestTrack.race((RemoteControlCar) productionCar);
-        TestTrack.race((RemoteControlCar) productionCar);
-        TestTrack.race((RemoteControlCar) experimentalCar);
-        TestTrack.race((RemoteControlCar) experimentalCar);
+        TestTrack.race(productionCar);
+        TestTrack.race(productionCar);
+        TestTrack.race(experimentalCar);
+        TestTrack.race(experimentalCar);
         assertThat(experimentalCar.getDistanceTravelled() - productionCar.getDistanceTravelled()).isEqualTo(20);
     }
 
@@ -62,12 +69,6 @@ public class RemoteControlCarTest {
     @DisplayName("The ProductionRemoteControlCar implements the Comparable interface")
     public void ensureCarsAreComparable() {
         assertThat(Comparable.class).isAssignableFrom(ProductionRemoteControlCar.class);
-    }
-
-    private static ProductionRemoteControlCar getCarWithVictories(int numberOfVictories) {
-        ProductionRemoteControlCar prc1 = new ProductionRemoteControlCar();
-        prc1.setNumberOfVictories(numberOfVictories);
-        return prc1;
     }
 
     @Test

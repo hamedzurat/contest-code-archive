@@ -8,9 +8,8 @@ import static org.assertj.core.api.Assertions.within;
 
 
 public class CarsAssembleTest {
-
     private CarsAssemble carsAssemble;
-    private double epsilon = 0.0000001d;
+    private double       epsilon = 0.0000001d;
 
     @BeforeEach
     public void setUp() {

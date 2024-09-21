@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
-public class FootballMatchReportsTest {
 
+public class FootballMatchReportsTest {
     @Test
     @Tag("task:1")
     @DisplayName("The onField method returns the correct description of player with shirt number 1")

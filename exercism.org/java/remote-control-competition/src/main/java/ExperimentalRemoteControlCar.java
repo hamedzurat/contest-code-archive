@@ -1,4 +1,5 @@
-public class ExperimentalRemoteControlCar implements RemoteControlCar {
+public class ExperimentalRemoteControlCar
+        implements RemoteControlCar {
     private int x = 0;
 
     public void drive() {

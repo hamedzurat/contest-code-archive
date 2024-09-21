@@ -1,5 +1,4 @@
 class Fighter {
-
     boolean isVulnerable() {
         return true;
     }
@@ -9,7 +8,9 @@ class Fighter {
     }
 }
 
-class Warrior extends Fighter {
+
+class Warrior
+        extends Fighter {
     @Override
     public String toString() {
         return "Fighter is a Warrior";
@@ -26,7 +27,9 @@ class Warrior extends Fighter {
     }
 }
 
-class Wizard extends Fighter {
+
+class Wizard
+        extends Fighter {
     boolean vulnerable = true;
 
     @Override

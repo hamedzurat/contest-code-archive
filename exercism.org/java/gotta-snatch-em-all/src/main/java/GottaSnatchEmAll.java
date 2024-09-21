@@ -2,8 +2,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-class GottaSnatchEmAll {
 
+class GottaSnatchEmAll {
     static Set<String> newCollection(List<String> cards) {
         return new HashSet<>(cards);
     }
@@ -13,7 +13,7 @@ class GottaSnatchEmAll {
     }
 
     static boolean canTrade(Set<String> myCollection, Set<String> theirCollection) {
-        boolean hasUniqueToMe = myCollection.stream().anyMatch(card -> !theirCollection.contains(card));
+        boolean hasUniqueToMe   = myCollection.stream().anyMatch(card -> !theirCollection.contains(card));
         boolean hasUniqueToThem = theirCollection.stream().anyMatch(card -> !myCollection.contains(card));
 
         return hasUniqueToMe && hasUniqueToThem;

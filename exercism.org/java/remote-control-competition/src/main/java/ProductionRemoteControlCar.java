@@ -1,4 +1,5 @@
-public class ProductionRemoteControlCar implements RemoteControlCar, Comparable<ProductionRemoteControlCar> {
+public class ProductionRemoteControlCar
+        implements RemoteControlCar, Comparable<ProductionRemoteControlCar> {
     private int x = 0, win = 0;
 
     public void drive() {

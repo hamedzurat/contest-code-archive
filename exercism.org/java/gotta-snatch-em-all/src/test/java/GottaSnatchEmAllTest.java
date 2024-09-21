@@ -8,8 +8,8 @@ import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class GottaSnatchEmAllTest {
 
+class GottaSnatchEmAllTest {
     @Test
     @Tag("task:1")
     @DisplayName("newCollection returns an empty set when given an empty list")
@@ -21,8 +21,8 @@ class GottaSnatchEmAllTest {
     @Tag("task:1")
     @DisplayName("newCollection returns a set with one card when given a list with one card")
     void testNewCollectionSingletonList() {
-        List<String> cards = List.of("Bleakachu");
-        Set<String> expected = Set.of("Bleakachu");
+        List<String> cards    = List.of("Bleakachu");
+        Set<String>  expected = Set.of("Bleakachu");
         assertThat(GottaSnatchEmAll.newCollection(cards)).isEqualTo(expected);
     }
 
@@ -30,8 +30,8 @@ class GottaSnatchEmAllTest {
     @Tag("task:1")
     @DisplayName("newCollection returns a set with one card when given a list with one repeated card")
     void testNewCollectionListWithDuplicates() {
-        List<String> cards = List.of("Bleakachu", "Bleakachu");
-        Set<String> expected = Set.of("Bleakachu");
+        List<String> cards    = List.of("Bleakachu", "Bleakachu");
+        Set<String>  expected = Set.of("Bleakachu");
         assertThat(GottaSnatchEmAll.newCollection(cards)).isEqualTo(expected);
     }
 
@@ -39,8 +39,8 @@ class GottaSnatchEmAllTest {
     @Tag("task:1")
     @DisplayName("newCollection returns a set with two cards when given a list with two unique cards")
     void testNewCollectionListWithoutDuplicates() {
-        List<String> cards = List.of("Bleakachu", "Newthree");
-        Set<String> expected = Set.of("Bleakachu", "Newthree");
+        List<String> cards    = List.of("Bleakachu", "Newthree");
+        Set<String>  expected = Set.of("Bleakachu", "Newthree");
         assertThat(GottaSnatchEmAll.newCollection(cards)).isEqualTo(expected);
     }
 
@@ -65,7 +65,7 @@ class GottaSnatchEmAllTest {
     @DisplayName("addCard adds the card to the collection when it is a new card")
     void testAddCardShouldAddNewCardToCollection() {
         Set<String> collection = new HashSet<>();
-        Set<String> expected = Set.of("Veevee");
+        Set<String> expected   = Set.of("Veevee");
         GottaSnatchEmAll.addCard("Veevee", collection);
         assertThat(collection).isEqualTo(expected);
     }
@@ -75,7 +75,7 @@ class GottaSnatchEmAllTest {
     @DisplayName("addCard doesn't add the card to the collection when it already contains the new card")
     void testAddCardShouldNotAddExistingCardToCollection() {
         Set<String> collection = new HashSet<>(Set.of("Veevee"));
-        Set<String> expected = Set.of("Veevee");
+        Set<String> expected   = Set.of("Veevee");
         GottaSnatchEmAll.addCard("Veevee", collection);
         assertThat(collection).isEqualTo(expected);
     }
@@ -84,7 +84,7 @@ class GottaSnatchEmAllTest {
     @Tag("task:3")
     @DisplayName("canTrade returns false when both collections are empty")
     void testCanTradeBothCollectionsEmpty() {
-        Set<String> myCollection = new HashSet<>();
+        Set<String> myCollection    = new HashSet<>();
         Set<String> theirCollection = new HashSet<>();
         assertThat(GottaSnatchEmAll.canTrade(myCollection, theirCollection)).isFalse();
     }
@@ -93,7 +93,7 @@ class GottaSnatchEmAllTest {
     @Tag("task:3")
     @DisplayName("canTrade returns false when my collections is empty")
     void testCanTradeMyCollectionsEmpty() {
-        Set<String> myCollection = new HashSet<>();
+        Set<String> myCollection    = new HashSet<>();
         Set<String> theirCollection = new HashSet<>(Set.of("Bleakachu"));
         assertThat(GottaSnatchEmAll.canTrade(myCollection, theirCollection)).isFalse();
     }
@@ -102,7 +102,7 @@ class GottaSnatchEmAllTest {
     @Tag("task:3")
     @DisplayName("canTrade returns false when their collections is empty")
     void testCanTradeTheirCollectionsEmpty() {
-        Set<String> myCollection = new HashSet<>(Set.of("Bleakachu"));
+        Set<String> myCollection    = new HashSet<>(Set.of("Bleakachu"));
         Set<String> theirCollection = new HashSet<>();
         assertThat(GottaSnatchEmAll.canTrade(myCollection, theirCollection)).isFalse();
     }
@@ -111,7 +111,7 @@ class GottaSnatchEmAllTest {
     @Tag("task:3")
     @DisplayName("canTrade returns false when both collections have the same cards")
     void testCanTradeBothCollectionsHaveSameCards() {
-        Set<String> myCollection = new HashSet<>(Set.of("Gyros", "Garilord"));
+        Set<String> myCollection    = new HashSet<>(Set.of("Gyros", "Garilord"));
         Set<String> theirCollection = new HashSet<>(Set.of("Garilord", "Gyros"));
         assertThat(GottaSnatchEmAll.canTrade(myCollection, theirCollection)).isFalse();
     }
@@ -120,7 +120,7 @@ class GottaSnatchEmAllTest {
     @Tag("task:3")
     @DisplayName("canTrade returns true when both collections have unique cards")
     void testCanTradeBothCollectionsHaveUniqueCards() {
-        Set<String> myCollection = new HashSet<>(Set.of("Gyros"));
+        Set<String> myCollection    = new HashSet<>(Set.of("Gyros"));
         Set<String> theirCollection = new HashSet<>(Set.of("Garilord"));
         assertThat(GottaSnatchEmAll.canTrade(myCollection, theirCollection)).isTrue();
     }
@@ -129,7 +129,7 @@ class GottaSnatchEmAllTest {
     @Tag("task:3")
     @DisplayName("canTrade returns true when both collections have at least one card the other doesn't have")
     void testCanTradeBothCollectionsMixedCards() {
-        Set<String> myCollection = new HashSet<>(Set.of("Gyros", "Garilord", "Bleakachu"));
+        Set<String> myCollection    = new HashSet<>(Set.of("Gyros", "Garilord", "Bleakachu"));
         Set<String> theirCollection = new HashSet<>(Set.of("Garilord", "Veevee", "Gyros"));
         assertThat(GottaSnatchEmAll.canTrade(myCollection, theirCollection)).isTrue();
     }
@@ -138,7 +138,7 @@ class GottaSnatchEmAllTest {
     @Tag("task:3")
     @DisplayName("canTrade returns false when my collection is a non-empty subset of their collection")
     void testCanTradeMyCollectionSubsetOfTheirCollection() {
-        Set<String> myCollection = new HashSet<>(Set.of("Gyros", "Garilord"));
+        Set<String> myCollection    = new HashSet<>(Set.of("Gyros", "Garilord"));
         Set<String> theirCollection = new HashSet<>(Set.of("Garilord", "Veevee", "Gyros"));
         assertThat(GottaSnatchEmAll.canTrade(myCollection, theirCollection)).isFalse();
     }
@@ -147,7 +147,7 @@ class GottaSnatchEmAllTest {
     @Tag("task:3")
     @DisplayName("canTrade returns false when their collection is a non-empty subset of my collection")
     void testCanTradeTheirCollectionSubsetOfMyCollection() {
-        Set<String> myCollection = new HashSet<>(Set.of("Garilord", "Veevee", "Gyros"));
+        Set<String> myCollection    = new HashSet<>(Set.of("Garilord", "Veevee", "Gyros"));
         Set<String> theirCollection = new HashSet<>(Set.of("Gyros", "Garilord"));
         assertThat(GottaSnatchEmAll.canTrade(myCollection, theirCollection)).isFalse();
     }

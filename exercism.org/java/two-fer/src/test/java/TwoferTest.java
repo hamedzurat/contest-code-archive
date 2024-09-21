@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class TwoferTest {
 
+public class TwoferTest {
     private Twofer twofer;
 
     @BeforeEach
@@ -19,18 +19,17 @@ public class TwoferTest {
                 .isEqualTo("One for you, one for me.");
     }
 
-//    @Disabled("Remove to run test")
+    //    @Disabled("Remove to run test")
     @Test
     public void aNameGiven() {
         assertThat(twofer.twofer("Alice"))
                 .isEqualTo("One for Alice, one for me.");
     }
 
-//    @Disabled("Remove to run test")
+    //    @Disabled("Remove to run test")
     @Test
     public void anotherNameGiven() {
         assertThat(twofer.twofer("Bob"))
                 .isEqualTo("One for Bob, one for me.");
     }
-
 }

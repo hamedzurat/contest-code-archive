@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SecretsTest {
 
+public class SecretsTest {
     @Test
     @Tag("task:1")
     @DisplayName("shift 8 back 2 places")
@@ -13,11 +13,10 @@ public class SecretsTest {
         assertThat(Secrets.shiftBack(8, 2)).isEqualTo(2);
     }
 
-
     @Test
     @Tag("task:1")
     @DisplayName("shift -2_144_333_657 back 3 places")
-    public void  shiftNegativeNumberBack3Places() {
+    public void shiftNegativeNumberBack3Places() {
         assertThat(Secrets.shiftBack(-2_144_333_657, 3)).isEqualTo(268_829_204);
     }
 

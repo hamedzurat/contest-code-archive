@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;
 
-public class LanguageListTest {
 
+public class LanguageListTest {
     LanguageList languageList = new LanguageList();
 
     @Test

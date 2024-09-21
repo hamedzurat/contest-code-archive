@@ -1,7 +1,7 @@
 package utils;
 
-public class Lasagna extends ReflectionProxy {
-
+public class Lasagna
+        extends ReflectionProxy {
     @Override
     public String getTargetClassName() {
         return "Lasagna";

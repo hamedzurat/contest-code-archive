@@ -1,5 +1,6 @@
 class CalculatorConundrum {
-    public String calculate(int operand1, int operand2, String operation) throws IllegalOperationException, IllegalArgumentException {
+    public String calculate(int operand1, int operand2, String operation)
+            throws IllegalOperationException, IllegalArgumentException {
         int x;
 
         if (operation == null) throw new IllegalArgumentException("Operation cannot be null");

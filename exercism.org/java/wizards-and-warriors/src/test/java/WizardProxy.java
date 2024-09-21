@@ -1,5 +1,5 @@
-class WizardProxy extends ReflectionProxy {
-
+class WizardProxy
+        extends ReflectionProxy {
     @Override
     public String getTargetClassName() {
         return "Wizard";
