@@ -1,0 +1,30 @@
+{
+  "authors": [
+    "Kineolyan"
+  ],
+  "contributors": [
+    "jmrunkle",
+    "lemoncurry",
+    "msomji",
+    "muzimuzhi",
+    "sshine",
+    "ViralTaco"
+  ],
+  "files": {
+    "solution": [
+      "src/main/java/Grains.java"
+    ],
+    "test": [
+      "src/test/java/GrainsTest.java"
+    ],
+    "example": [
+      ".meta/src/reference/java/Grains.java"
+    ],
+    "invalidator": [
+      "build.gradle"
+    ]
+  },
+  "blurb": "Calculate the number of grains of wheat on a chessboard given that the number on each square doubles.",
+  "source": "The CodeRanch Cattle Drive, Assignment 6",
+  "source_url": "https://coderanch.com/wiki/718824/Grains"
+}
