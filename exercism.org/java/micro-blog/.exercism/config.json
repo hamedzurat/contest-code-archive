@@ -1,0 +1,24 @@
+{
+  "authors": [
+    "jmrunkle"
+  ],
+  "contributors": [
+    "msomji",
+    "muzimuzhi"
+  ],
+  "files": {
+    "solution": [
+      "src/main/java/MicroBlog.java"
+    ],
+    "test": [
+      "src/test/java/MicroBlogTest.java"
+    ],
+    "example": [
+      ".meta/src/reference/java/MicroBlog.java"
+    ],
+    "invalidator": [
+      "build.gradle"
+    ]
+  },
+  "blurb": "Given an input string, truncate it to 5 characters."
+}
