@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "FridaTveit"
+  ],
+  "contributors": [
+    "hugueschabot",
+    "jmrunkle",
+    "jssander",
+    "kytrinyx",
+    "lemoncurry",
+    "mirkoperillo",
+    "morrme",
+    "msomji",
+    "muzimuzhi",
+    "pratikpalashikar",
+    "SleeplessByte",
+    "Smarticles101",
+    "sonapraneeth-a",
+    "sshine",
+    "stkent",
+    "Zaldrick"
+  ],
+  "files": {
+    "solution": [
+      "src/main/java/Matrix.java"
+    ],
+    "test": [
+      "src/test/java/MatrixTest.java"
+    ],
+    "example": [
+      ".meta/src/reference/java/Matrix.java"
+    ],
+    "invalidator": [
+      "build.gradle"
+    ]
+  },
+  "blurb": "Given a string representing a matrix of numbers, return the rows and columns of that matrix.",
+  "source": "Exercise by the JumpstartLab team for students at The Turing School of Software and Design.",
+  "source_url": "https://turing.edu"
+}
