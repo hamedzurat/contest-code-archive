@@ -1,0 +1,45 @@
+{
+    "authors": [
+        "stkent"
+    ],
+    "contributors": [
+        "aadityakulkarni",
+        "FridaTveit",
+        "hgvanpariya",
+        "jackattack24",
+        "jmrunkle",
+        "kytrinyx",
+        "lemoncurry",
+        "mirkoperillo",
+        "morrme",
+        "msomji",
+        "muzimuzhi",
+        "redshirt4",
+        "sjwarner-bp",
+        "SleeplessByte",
+        "Smarticles101",
+        "sshine",
+        "vivshaw",
+        "Zaldrick"
+    ],
+    "files": {
+        "solution": [
+            "src/main/java/Matrix.java"
+        ],
+        "test": [
+            "src/test/java/MatrixTest.java"
+        ],
+        "example": [
+            ".meta/src/reference/java/Matrix.java"
+        ],
+        "editor": [
+            "src/main/java/MatrixCoordinate.java"
+        ],
+        "invalidator": [
+            "build.gradle"
+        ]
+    },
+    "blurb": "Detect saddle points in a matrix.",
+    "source": "J Dalbey's Programming Practice problems",
+    "source_url": "https://users.csc.calpoly.edu/~jdalbey/103/Projects/ProgrammingPractice.html"
+}
